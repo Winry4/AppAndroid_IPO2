@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/RelativeItem"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/fotoPeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fotoPeli"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/fotoPeli"
+            android:layout_toRightOf="@+id/fotoPeli"
+            android:text="TITULO"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <TextView
+            android:id="@+id/duracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView"
+            android:layout_alignLeft="@+id/titulo"
+            android:layout_alignStart="@+id/titulo"
+            android:text="Duracion"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="78dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fotoPeli"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/linea_menu" />
+
+        <ImageView
+            android:id="@+id/estrella1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/titulo"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/estrella" />
+
+        <ImageView
+            android:id="@+id/estrella2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/estrella1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/estrella1"
+            android:layout_toRightOf="@+id/estrella1"
+            app:srcCompat="@drawable/estrella" />
+
+        <ImageView
+            android:id="@+id/estrella3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/estrella2"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/estrella2"
+            android:layout_toRightOf="@+id/estrella2"
+            app:srcCompat="@drawable/estrella" />
+
+        <ImageView
+            android:id="@+id/estrella4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignTop="@+id/estrella3"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/estrella3"
+            android:layout_toRightOf="@+id/estrella3"
+            app:srcCompat="@drawable/estrella" />
+        <ImageView
+            android:id="@+id/estrella5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_alignTop="@+id/estrella4"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/estrella4"
+            android:layout_toRightOf="@+id/estrella4"
+            app:srcCompat="@drawable/estrella0" />
+
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/RelativeItem"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/elimina" />
+
+</RelativeLayout>
